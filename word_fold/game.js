@@ -131,7 +131,7 @@ function newgame_click() {
   document.getElementById("words").innerHTML =
   "Words to spell: " + BOARDS[currentBoard].words.join(", ");
 }
-
+// theres like a little delay in between when you actually click them together and when the font scales cause they hate me i guess idk man
 function scaleFont() {
     const cells = Array.from(document.getElementById("cell-holder").children);
 
@@ -156,8 +156,7 @@ function scaleFont() {
         // Ensure the font size is large enough but also doesn't overflow
         cell.style.fontSize = `${fontSize}px`;
 
-        setTimeout(scaleFont, .01); 
-
+        setTimeout(scaleFont, .01); // dont work without this bad boy for some goddamn reason :(
     }
 }
 
