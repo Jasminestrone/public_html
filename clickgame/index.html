@@ -4,43 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cat's Grass Game</title>
+    <title>Cats Grass Game</title>
     <link rel="stylesheet" href="styles.css">
     <script src="./game.js" defer></script>
 </head>
 
 <body>
-    <h1 class="center">Cats's Grass Game</h1>
+    <h1 class="center">Cats Grass Game</h1>
     <h2 class="center" id="score">Score: 0</h2>
     <div id="store-container">
         <div class="store" name="Lawn" cost="10" onclick="buy(event.currentTarget)">
             <div class="widget" reap="2" cooldown="0.5" auto="false" name="Lawn">
-                <p>Lawn</p>
+                <p>catnip (trust)</p>
                 <div class="overlay-slide" style="animation-duration: 0.5s;"></div>
             </div>
-            <p>Lawn</p>
+            <p>Catnip</p>
             <p>10 points</p>
             <p>+2 sqft</p>
             <p>0.5s</p>
         </div>
-        <div class="store" name="Gompei" cost="15" reap="10" cooldown="2.0" auto="true" src="./cat.jpg"
+        <div class="store" name="Cat" cost="20" reap="10" cooldown="2.0" auto="true" src="./gompei.png"
             onclick="buy(event.currentTarget)">
             <div class="widget" reap="10" cooldown="2.0" auto="true" name="Gompei">
                 <img src="./cat.jpg">
                 <div class="overlay-slide" style="animation-duration: 2s;"></div>
             </div>
             <p>Cat</p>
-            <p>15 points</p>
+            <p>20 points</p>
             <p>+10 sqft</p>
             <p>2.0s</p>
         </div>
-        <div class="store" name="Super-Gompei" cost="150" reap="100" cooldown="5.0" auto="true" src="./cat2.jpg"
+        <div class="store" name="Super-Cat" cost="150" reap="100" cooldown="5.0" auto="true" src="./gompei.png"
             onclick="buy(event.currentTarget)">
             <div class="widget" reap="100" cooldown="5.0" auto="true" name="Super-Gompei">
                 <img src="./cat2.jpg" id="super-gompei">
                 <div class="overlay-slide" style="animation-duration: 5s;"></div>
             </div>
-            <p>Super-Cat</p>
+            <p>Super-cat</p>
             <p>150 points</p>
             <p>+100 sqft</p>
             <p>5.0s</p>

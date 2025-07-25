@@ -1,7 +1,7 @@
 const widget_container = document.getElementById("widget-container");
 const stores = document.getElementsByClassName("store");
 const score_element = document.getElementById("score");
-let score = 5;
+let score = 10;
 let super_gompei_count = 0;
 
 function changeScore(amount) {
@@ -10,6 +10,7 @@ function changeScore(amount) {
 
     // Update the stores to block buying expensive boxes
     for (let store of stores) {
+        // let bank = parseInt(score.innerHTML);
         let cost = parseInt(store.getAttribute("cost"));
 
         if (score < cost) {
@@ -21,6 +22,7 @@ function changeScore(amount) {
 }
 function buy(store) {
     const cost = parseInt(store.getAttribute("cost"));
+    // console.log(`bank: [${score}] cost: [${cost}]`);
 
     if (score < cost) {
         return;
